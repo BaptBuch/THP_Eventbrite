@@ -7,3 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 require 'faker'
+
+
+10.times do |u|
+  user = User.create(first_name: Faker::Superhero.name)
+end
